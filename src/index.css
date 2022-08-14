@@ -5,8 +5,65 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:lightgray;
 }
 
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem;    
+}
+
+/* uses page-container, content-wrap, and footer in order to make a footer  */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;   
+  background-color: gray;
+  color: white;
+}
+
+p{
+  font-size:40px;
+}
+h1{
+  font-size:25px;
+}
+.flex{
+  width: 70rem;
+  background: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex > div{
+  width: 50rem;
+  background-color:gray;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.comment{
+  background-color:rgb(200, 200, 200);
+  border-style: solid;
+}
+.post{
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color:rgb(255,255,255);
+  border-style: solid;
+}
+.float-right{
+  float: right;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
